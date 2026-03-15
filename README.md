@@ -16,6 +16,10 @@ A simple and responsive QR Code Generator Web Application built using HTML, CSS,
 
 6.Lightweight and beginner-friendly project
 
+🚀 Live Demo
+[click this link to see the project] https://vaishnavi1539.github.io/QR-Code-Generator/
+
+
 🛠️ Tech Stack
 
 1.HTML – Structure of the web page
