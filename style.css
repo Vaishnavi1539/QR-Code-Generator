@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font:'Inter','sans-serif'
+}
+
+*{
+margin:0;
+padding:0;
+
+}
+body{
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+height:100vh;
+width:100vw;
+background-image: url("https://img.freepik.com/premium-vector/diamond-shape-white-abstract-background_535749-1220.jpg?w=900");
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.mainContainer.opacity{
+    opacity:0.4;
+}
+
+
+.sidebar {
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer{
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar img{
+    width:15%;
+    margin:0 20px;
+}
+.sidebar .textContainer h1, p{
+    font-family : var(--font);
+    margin-bottom :5px;
+}
+.home{
+    height:200px;
+    width:100%;
+    background-color: white;
+    box-shadow:0 5px 10px black;
+    border-radius:5px;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.home h2{
+    font-family:var(--font);
+}
+
+#qrInput{
+    height:25px;
+    width:80%;
+    border-radius:5px;
+    border:1px solid black;
+    margin: 15px 0 25px;
+    padding:7px;
+    font-size:16px;
+    font-family:var(--font);
+}
+#generateBtn , #downloadBtn , #closeBtn{
+    height:35px;
+    width:85%;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-family:var(--font);
+    font-size:16px;
+    cursor:pointer;
+    transition:transform 0.3s;
+
+}
+#generate:hover , #downloadBtn,#closeBtn{
+    transform:scale(1.01);
+
+}
+#qrPopup{
+height:450px;
+width:300px;
+background-color:black;
+position:absolute;
+bottom:60%;
+border-radius:10px;
+opacity:0;
+transform:scale(0);
+box-shadow: 0 5px 10px gray;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition:  tranform 0.5s ease-in-out,
+             opacity 0.5s,
+             bottom 0.5s ease-in-out;
+}
+#qrPopup.show{
+    transform:scale(1);
+    opacity:1;
+    bottom:15%;
+
+}
+#qrImg{
+  width:70%;
+  border:8px solid white;
+  border-radius:  5px;
+  margin:20px 0 25px;
+}
+
+#qrInput h2{
+    color:White;
+    font-family:var(--font);
+}
+
+#downloadBtn{
+    background-color: white;
+    width:70%;
+    color:black;
+    margin:3px 0;
+
+}
+#closeBtn{
+    width:70%;
+    border:1px solid white;
+    margin:3px 0;
+}

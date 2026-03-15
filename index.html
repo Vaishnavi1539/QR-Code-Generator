@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR-Generator</title>
+
+</head>
+<body>
+  <div class="mainContainer">
+<div class="sidebar">
+<img src="https://png.pngtree.com/png-vector/20220901/ourmid/pngtree-a-minimalistic-vector-qr-code-icon-for-use-as-a-logo-sticker-vector-png-image_33568802.png" alt="">
+<div>
+    <h1>Generate QR code</h1>
+    <p>Just in one click</p>
+</div>
+</div>
+<div class="homeContainer">
+    <div class="home">
+        <h2>Enter Text or URL</h2>
+        <input type="text" id="qrInput" placeholder="Text OR Url">
+        <button id="generateBtn">Generate QR Code</button>
+
+    </div>
+</div>
+  </div> 
+
+  <div id="qrPopup">
+   <h2>QR Generated</h2>
+   <img src="" alt="" id="qrImg">
+   <button id="downloadBtn">Download QR</button>
+   <button id="closeBtn">close</button>
+  </div>
+  <script src="app.js"></script> 
+</body>
+</html>
